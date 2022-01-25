@@ -333,7 +333,7 @@ late PolylinePoints polylinePoints;
   ) async {
     polylinePoints = PolylinePoints();
     PolylineResult result = await polylinePoints.getRouteBetweenCoordinates(
-      "AIzaSyD9NT_CiWDgItIN6pWWVzrDDiTFMgQCh_s", // Google Maps API Key
+      "", // Google Maps API Key
       PointLatLng(startLatitude, startLongitude),
       PointLatLng(destinationLatitude, destinationLongitude),
       travelMode: TravelMode.transit,

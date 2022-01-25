@@ -14,7 +14,7 @@ class ScrollPage extends StatefulWidget {
 }
 
 class _ScrollPageState extends State<ScrollPage> {
-  String googleApikey = "AIzaSyD9NT_CiWDgItIN6pWWVzrDDiTFMgQCh_s";
+  String googleApikey = "";
   GoogleMapController? mapController;
   CameraPosition? cameraPosition;
   LatLng startLocation = LatLng(37.1602292, 37.708027);

@@ -10,7 +10,7 @@ class PolylineService {
 
     PolylinePoints polylinePoints = PolylinePoints();
     PolylineResult result = await polylinePoints.getRouteBetweenCoordinates(
-        "AIzaSyD9NT_CiWDgItIN6pWWVzrDDiTFMgQCh_s",
+        "",
         PointLatLng(from.latitude, from.longitude),
         PointLatLng(to.latitude, to.longitude));
 

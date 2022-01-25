@@ -12,7 +12,7 @@ class MapPage extends StatefulWidget {
 }
 
 class _MapPageState extends State<MapPage> {
-  String googleApikey = "AIzaSyD9NT_CiWDgItIN6pWWVzrDDiTFMgQCh_s";
+  String googleApikey = "";
   GoogleMapController? mapController; //contrller for Google map
   CameraPosition? cameraPosition;
   LatLng startLocation = LatLng(37.6602292, 37.308027);
@@ -128,7 +128,7 @@ class _MapPageState extends State<MapPage> {
 
   void SetPolylines() async {
     PolylineResult result = await polylinePoints!.getRouteBetweenCoordinates(
-        "AIzaSyD9NT_CiWDgItIN6pWWVzrDDiTFMgQCh_s",
+        "",
         PointLatLng(currentLocation!.latitude!, currentLocation!.longitude!),
         PointLatLng(destination!.latitude, destination!.longitude));
     if (result.status == "OK") {
